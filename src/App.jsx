@@ -10,12 +10,14 @@ import { getFirestore, doc, setDoc, onSnapshot } from 'firebase/firestore';
 const isCanvas = typeof __firebase_config !== 'undefined';
 const firebaseConfig = isCanvas ? JSON.parse(__firebase_config) : {
   // ⚠️ VERCEL'E YÜKLERKEN BURAYI KENDİ BİLGİLERİNİZLE DOLDURMALISINIZ ⚠️
-  apiKey: "BURAYA_KENDİ_API_KEY_İNİZİ_YAZIN",
-  authDomain: "BURAYA_YAZIN.firebaseapp.com",
-  projectId: "BURAYA_YAZIN",
-  storageBucket: "BURAYA_YAZIN.appspot.com",
-  messagingSenderId: "BURAYA_YAZIN",
-  appId: "BURAYA_YAZIN"
+  const firebaseConfig = {
+  apiKey: "AIzaSyAGvFYyThJjVpJ_PSyMhcX_sQLfOskmo6k",
+  authDomain: "berber-randevu-1805e.firebaseapp.com",
+  projectId: "berber-randevu-1805e",
+  storageBucket: "berber-randevu-1805e.firebasestorage.app",
+  messagingSenderId: "167217512964",
+  appId: "1:167217512964:web:d99125394ebe49f6886b51"
+};
 };
 
 const app = initializeApp(firebaseConfig);
